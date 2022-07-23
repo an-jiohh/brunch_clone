@@ -1,9 +1,8 @@
 * {
   white-space: nowrap;
+  font-family: "Nanum Myeongjo", serif;
 }
 
-body {
-}
 /**/
 a {
   text-decoration: none;
@@ -67,8 +66,6 @@ ul {
 /*article*/
 #article {
   clear: both;
-  width: 940px;
-  margin: auto;
 }
 
 /*intro_brunch*/
@@ -77,6 +74,8 @@ ul {
 }
 
 .intro_brunch {
+  width: 960px;
+  margin: auto;
   margin-top: 20px;
 }
 
@@ -97,13 +96,16 @@ ul {
 }
 
 .intro_brunch .update {
-  float: right;
+  font-family: Georgia, sans-serif;
+  text-align: right;
 }
 
 /*editor_pic*/
 #article .editor_pic {
   clear: both;
   overflow: hidden;
+  width: 960px;
+  margin: auto;
 }
 #article .editor_pic .picture_container {
   display: inline-flex;
@@ -142,6 +144,7 @@ ul {
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 3;
+  background-image: url(/img/bg_bookblur.png);
 }
 
 .editor_pic .type_item2,
@@ -165,5 +168,71 @@ ul {
 
 .editor_pic .wrap_paging {
   clear: both;
+  margin-top: 22px;
   text-align: center;
+}
+
+.append_info .c_info {
+  color: aliceblue;
+}
+
+.item_box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.main_text {
+  font-size: 28px;
+}
+
+.sub_text {
+  font-family: "Noto Sans KR", sans-serif;
+  padding-top: 30px;
+  font-size: 12px;
+}
+
+.paging {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 8px;
+  padding-left: 11px;
+  padding-right: 11px;
+}
+
+/*keywords*/
+#article .keywords {
+  margin-top: 152px;
+  text-align: center;
+}
+
+#article .keywords a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  width: 121px;
+  height: 121px;
+  background-color: #fff;
+  border: 1px solid #eee;
+  margin: -1px;
+}
+
+#article .keywords a:hover {
+  border: 1px solid grey;
+  color: grey;
+  margin: -1px;
+  z-index: 0;
+}
+
+#article .keyword_layer {
+  display: flex;
+  justify-content: center;
+}
+
+#article .keyword_item {
+  font-size: 14px;
+  font-family: "Noto Sans DemiLight", "Malgun Gothic";
 }

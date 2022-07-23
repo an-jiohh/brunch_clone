@@ -5,11 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="//t1.daumcdn.net/brunch/static/prod/202207201408/production/B.Font.min.css"
-    />
+
     <script
       src="https://kit.fontawesome.com/86a83a7ba7.js"
       crossorigin="anonymous"
@@ -51,9 +47,36 @@
         <div class="editor_pic">
           <div class="picture_container">
             <div class="picture_typeA">
-              <div class="type_item1" style="background-color: black"></div>
-              <div class="type_item2" style="background-color: blue"></div>
-              <div class="type_item3" style="background-color: green"></div>
+              <div
+                class="item_box type_item1"
+                style="background-color: rgb(197, 197, 197)"
+              ></div>
+              <div
+                class="item_box type_item2"
+                style="background-image: url(/img/img1.jpeg)"
+              >
+                <div class="append_info">
+                  <div class="c_info">
+                    <div class="main_text">
+                      왜 하필 파전과<br />빈대떡은 비 오는<br />날이면 생각날까
+                    </div>
+                    <div class="sub_text">by 안지호</div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="item_box type_item3"
+                style="background-image: url(/img/img2.jpeg)"
+              >
+                <div class="append_info">
+                  <div class="c_info">
+                    <div class="main_text">
+                      독일인 할아버지가<br />내게 열 손가락을<br />보여준 까닭
+                    </div>
+                    <div class="sub_text">by 안지호</div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="picture_typeB">
               <div class="type_item1" style="background-color: blue"></div>
@@ -72,15 +95,15 @@
             </div>
           </div>
           <div class="wrap_paging">
-            <span class="page_img1">1</span>
-            <span class="page_img2">2</span>
-            <span class="page_img3">3</span>
-            <span class="page_img4">4</span>
-            <span class="page_img5">5</span>
-            <span class="page_img6">6</span>
-            <span class="page_img7">7</span>
-            <span class="page_img8">8</span>
-            <span class="page_img9">9</span>
+            <span class="paging page_img1">01</span>
+            <span class="paging page_img2">02</span>
+            <span class="paging page_img3">03</span>
+            <span class="paging page_img4">04</span>
+            <span class="paging page_img5">05</span>
+            <span class="paging page_img6">06</span>
+            <span class="paging page_img7">07</span>
+            <span class="paging page_img8">08</span>
+            <span class="paging page_img9">09</span>
             <script src="/slider.js"></script>
           </div>
         </div>
@@ -88,30 +111,36 @@
           <h3>BRUNCH KEYWORD</h3>
           <p>키워드로 분류된 다양한 글 모음</p>
           <div class="keyword_list">
-            <a href="" class="keyword_item">지구한바퀴세계여행</a
-            ><a href="" class="keyword_item">그림・웹툰</a
-            ><a href="" class="keyword_item">시사・이슈</a
-            ><a href="" class="keyword_item">IT 트렌트</a
-            ><a href="" class="keyword_item">사진・촬영</a
-            ><a href="" class="keyword_item"></a
-            ><a href="" class="keyword_item"></a
-            ><a href="" class="keyword_item"></a
-            ><a href="" class="keyword_item"></a
-            ><a href="" class="keyword_item"></a
-            ><a href="" class="keyword_item"></a
-            ><a href="" class="keyword_item"></a
-            ><a href="" class="keyword_item"></a
-            ><a href="" class="keyword_item"></a
-            ><a href="" class="keyword_item"></a
-            ><a href="" class="keyword_item"></a
-            ><a href="" class="keyword_item"></a
-            ><a href="" class="keyword_item"></a
-            ><a href="" class="keyword_item"></a
-            ><a href="" class="keyword_item"></a
-            ><a href="" class="keyword_item"></a
-            ><a href="" class="keyword_item"></a
-            ><a href="" class="keyword_item"></a
-            ><a href="" class="keyword_item"></a>
+            <div class="keyword_layer">
+              <a href="" class="keyword_item">지구한바퀴<br />세계여행</a
+              ><a href="" class="keyword_item">그림・웹툰</a
+              ><a href="" class="keyword_item">시사・이슈</a
+              ><a href="" class="keyword_item">IT<br />트렌트</a
+              ><a href="" class="keyword_item">사진・촬영</a
+              ><a href="" class="keyword_item">취향저격<br />영화 리뷰</a
+              ><a href="" class="keyword_item">오늘은<br />이런 책</a
+              ><a href="" class="keyword_item">뮤직 인사이드</a>
+            </div>
+            <div class="keyword_layer">
+              <a href="" class="keyword_item">글쓰기<br />코치</a
+              ><a href="" class="keyword_item">직장인<br />현실 조언</a
+              ><a href="" class="keyword_item">스타트업<br />경험담</a
+              ><a href="" class="keyword_item">육아<br />이야기</a
+              ><a href="" class="keyword_item">요리・레시피</a
+              ><a href="" class="keyword_item">건강・운동</a
+              ><a href="" class="keyword_item">멘탈 관리<br />심리 탐구</a
+              ><a href="" class="keyword_item">디자인<br />스토리</a>
+            </div>
+            <div class="keyword_layer">
+              <a href="" class="keyword_item">문화・예술</a
+              ><a href="" class="keyword_item">건축・설계</a
+              ><a href="" class="keyword_item">인문학・철학</a
+              ><a href="" class="keyword_item">쉽게 읽는<br />역사</a
+              ><a href="" class="keyword_item">우리집<br />반려동물</a
+              ><a href="" class="keyword_item">멋진<br />캘리그래피</a
+              ><a href="" class="keyword_item">사랑・이별</a
+              ><a href="" class="keyword_item">감성<br />에세이</a>
+            </div>
           </div>
         </div>
         <div class="brunch_writer">
