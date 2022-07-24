@@ -20,8 +20,12 @@ ul {
   padding-left: 0px;
 }
 
+body {
+  margin: 0 0 0 0;
+}
+
 /*font*/
-@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Noto+Sans+KR:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Noto+Sans+KR:wght@100;300&display=swap");
 
 .nanummyeongjo * {
   font-family: "Nanum Myeongjo", serif;
@@ -66,6 +70,12 @@ ul {
 /*article*/
 #article {
   clear: both;
+}
+
+#article .sub_title {
+  font-family: "Noto Sans KR", sans-serif;
+  color: grey;
+  font-size: 12px;
 }
 
 /*intro_brunch*/
@@ -207,12 +217,17 @@ ul {
   text-align: center;
 }
 
+#article .keyword_list {
+  margin-top: 46px;
+}
+
 #article .keywords a {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   white-space: nowrap;
+  min-width: 121px; /*이거 맞냐? 태그 특징을 잘몰라서 일어난 문제*/
   width: 121px;
   height: 121px;
   background-color: #fff;
@@ -235,4 +250,285 @@ ul {
 #article .keyword_item {
   font-size: 14px;
   font-family: "Noto Sans DemiLight", "Malgun Gothic";
+}
+
+/*brunch_writer*/
+#article .brunch_writer {
+  text-align: center;
+  background-color: #fafafa;
+  margin-top: 150px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+#article .brunch_writer .writer_keyword {
+  margin-top: 43px;
+}
+
+/* #article .writer_keyword button {
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 25px;
+  color: #959595;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 15px;
+  height: 32px;
+  text-align: center;
+  text-decoration: none;
+  width: 60px;
+} */
+
+#article .writer_keyword button {
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 25px;
+  color: #959595;
+  display: inline-block;
+  font-family: "Noto Sans Light", "Malgun Gothic";
+  font-size: 15px;
+  line-height: 18px;
+  margin: 0 2px;
+  overflow: hidden;
+  padding: 7px 16px 6px;
+}
+
+#article .brunch_writer .writers {
+  margin-top: 50px;
+}
+
+#article .brunch_writer .writers_group {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#article .brunch_writer .writers_info {
+  display: block;
+  width: 230px;
+  height: 288px;
+  min-width: 230px;
+  padding: 46px 40px 46px 40px;
+  margin: 15px 0 0 15px;
+  background: #fff;
+}
+
+#article .writers_info img {
+  display: block;
+  margin: auto;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+}
+
+#article .writers_info strong {
+  display: block;
+  font-family: "Nanum Myeongjo", serif;
+  font-size: 20px;
+  padding: 18px 12px;
+}
+
+#article .writers_info .writer_job {
+  margin-top: 4px;
+  font-family: "Noto Sans Light", "Malgun Gothic";
+  font-size: 13px;
+  color: #666666;
+}
+
+#article .writers_info .writer_txt {
+  margin-top: 16px;
+  height: 60px;
+  font-family: "Noto Sans Light", "Malgun Gothic";
+  font-size: 13px;
+  color: #959595;
+}
+
+#article .writers_info button {
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 25px;
+  color: #959595;
+  display: inline-block;
+  font-family: "Noto Sans Light", "Malgun Gothic";
+  font-size: 12px;
+  line-height: 18px;
+  margin: 0 2px;
+  overflow: hidden;
+  padding: 7px 16px 6px;
+}
+
+/* link_application */
+#article .link_application {
+  display: flex;
+  justify-content: center;
+}
+
+#article .link_application img {
+  display: block;
+  margin-top: 97px;
+}
+
+/* recomend_articles */
+
+#article .recomend_articles {
+  margin-top: 152px;
+}
+
+#article .recomend_articles h3,
+p {
+  text-align: center;
+}
+
+#article .recomend_articles .wrap_contents {
+  position: relative;
+  overflow: hidden;
+}
+
+#article .recomend_articles .wrap_slide {
+  width: 960px;
+  height: 600px;
+  overflow: visible;
+  margin: auto;
+  display: flex;
+  transition: transform 0.5s;
+}
+
+#article .recomend_articles .contents_item {
+  margin: 0 10px 0 10px;
+  min-width: 240px;
+  width: 240px;
+}
+
+#article .contents_item img {
+  display: block;
+  margin-bottom: 22px;
+}
+
+#article .contents_item .contents_title {
+  font-family: "Noto Sans Light", "Malgun Gothic";
+  font-size: 16px;
+  font-weight: 300;
+}
+
+#article .contents_item .contents_txt {
+  font-family: "Noto Sans Light", "Malgun Gothic";
+  text-align: justify;
+  white-space: normal;
+  font-size: 12px;
+  letter-spacing: -0.3px;
+  font-weight: 100;
+  line-height: 20px;
+  color: #959595;
+}
+
+#article .contents_item .contents_info {
+  font-family: "Noto Sans Light", "Malgun Gothic";
+  font-size: 12px;
+  color: #959595;
+  font-weight: 300;
+}
+
+#article .contents_item span {
+  font-family: Georgia, sans-serif;
+  font-style: italic;
+}
+
+#article .buttons {
+  margin-top: -50px;
+  position: absolute;
+  top: 50%;
+  width: 100vw;
+}
+
+#article .left_button {
+  height: 100px;
+  width: 100px;
+  float: left;
+  background-color: rgba(255, 255, 255, 0.6);
+  z-index: 10;
+  text-align: center;
+  font-family: "Noto Sans Light", "Malgun Gothic";
+  font-weight: 100;
+  font-size: 90px;
+  font-weight: 100;
+  border-radius: 50px;
+  display: none;
+}
+
+#article .right_button {
+  height: 100px;
+  width: 100px;
+  float: right;
+  background-color: rgba(255, 255, 255, 0.6);
+  z-index: 10;
+  text-align: center;
+  font-family: "Noto Sans Light", "Malgun Gothic";
+  font-weight: 100;
+  font-size: 90px;
+  font-weight: 100;
+  border-radius: 50px;
+}
+
+/* footer */
+
+#footer .inner_foot {
+  background-color: black;
+  color: white;
+}
+
+#footer a {
+  font-family: "Noto Sans Light", "Malgun Gothic";
+  font-weight: 100;
+  font-size: 13px;
+  margin-bottom: 13px;
+  display: block;
+  color: white;
+}
+
+#footer .inner_foot {
+  padding: 48px 30px 0 30px;
+}
+
+/* footer wrap_info */
+#footer .wrap_info {
+  margin-bottom: 35px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrap_info .area_quotation {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  margin-right: 100px;
+  font-size: 17px;
+}
+
+.wrap_info .area_quotation span {
+  display: block;
+  margin-top: 10px;
+  font-size: 11px;
+  color: #858585;
+}
+
+#footer .wrap_corp {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid hsla(0, 0%, 100%, 0.1);
+  padding-top: 23px;
+  padding-bottom: 30px;
+}
+
+#footer .kakao_corp {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  color: #858585;
+  font-size: 11px;
+}
+
+#footer .store_group {
+  display: flex;
+}
+
+#footer .store_group .store {
+  font-size: 23px;
+  margin-left: 20px;
 }
