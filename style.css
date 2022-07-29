@@ -1,12 +1,17 @@
+:root {
+  --color-black: #000000;
+}
+
 * {
   white-space: nowrap;
   font-family: "Nanum Myeongjo", serif;
+  box-sizing: border-box;
 }
 
 /**/
 a {
   text-decoration: none;
-  color: black;
+  color: var(--color-black);
 }
 
 button {
@@ -26,10 +31,6 @@ body {
 
 /*font*/
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Noto+Sans+KR:wght@100;300&display=swap");
-
-.nanummyeongjo * {
-  font-family: "Nanum Myeongjo", serif;
-}
 
 /*header*/
 #header {
