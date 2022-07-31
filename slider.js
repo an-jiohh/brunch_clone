@@ -1,3 +1,15 @@
+// header nav_bar
+document.querySelector("#header button").addEventListener("click", function () {
+  document.querySelector("#header .nav").style.marginLeft = 0;
+  document.querySelector("#header .nav_close").style.marginLeft = 0;
+});
+document
+  .querySelector("#header .nav_close")
+  .addEventListener("click", function () {
+    document.querySelector("#header .nav").style.marginLeft = "-260px";
+    document.querySelector("#header .nav_close").style.marginLeft = "-100vw";
+  });
+
 // editor_pic
 document.querySelector(".page_img1").addEventListener("click", function () {
   document.querySelector(".picture_container").style.transform =
